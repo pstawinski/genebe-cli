@@ -8,6 +8,7 @@ Command Line Interface for GeneBe -- The Genetic Variant Interpretation Tool
 - **Automatic Liftover**: Seamlessly performs coordinate liftover between genome builds.
 - **Multiallelic Splitting**: Automatically splits multiallelic VCF entries into single-allelic records.
 - **Variant Type Support**: Currently supports only SNVs (Single Nucleotide Variants) and small InDels. Structural Variants (SV) and Copy Number Variants (CNV) are not yet supported.
+- **Multiple Output Formats**: Supports VCF, TSV, MDB, Parquet and JSON output formats.
 
 ## Usage and Documentation
 Comprehensive documentation and usage examples can be found at [GeneBe VCF File Annotation Guide](https://genebe.net/about/vcf-file-annotation).
