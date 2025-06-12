@@ -11,7 +11,7 @@ Command Line Interface for GeneBe -- The Genetic Variant Interpretation Tool
 - **GeneBeHub Client**: use [GeneBe Hub](https://genebe.net/hub), push, pull and create new variant annotations that can be easily applied to your VCF
 
 ## Usage and Documentation
-Comprehensive documentation and usage examples can be found at [GeneBe VCF File Annotation Guide](https://genebe.net/about/vcf-file-annotation).
+Comprehensive documentation and usage examples can be found at [GeneBe VCF File Annotation Guide](https://docs.genebe.net/docs/tutorials/vcf-file-annotation).
 
 ## About
 **genebe-cli** is free to use for research purposes. Please note that the tool is currently in alpha, so feedback and issue reports are encouraged to help improve its functionality. If you encounter any issues or have suggestions, please raise them in the GitHub Issues section.
