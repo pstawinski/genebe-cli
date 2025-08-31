@@ -17,7 +17,7 @@ RUN chown appuser:appuser app.jar
 USER appuser
 
 # Run the application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]
 
 # Optional: Add JVM tuning for containerized environments
 # ENTRYPOINT ["java", "-XX:+UseContainerSupport", "-XX:MaxRAMPercentage=75.0", "-jar", "app.jar"]
