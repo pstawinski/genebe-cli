@@ -11,9 +11,25 @@ Command Line Interface for GeneBe -- The Genetic Variant Interpretation Tool
 - **GeneBeHub Client**: use [GeneBe Hub](https://genebe.net/hub), push, pull and create new variant annotations that can be easily applied to your VCF
 
 ## Usage and Documentation
-Comprehensive documentation and usage examples can be found at [GeneBe VCF File Annotation Guide](https://genebe.net/about/vcf-file-annotation).
+Comprehensive documentation and usage examples can be found at [GeneBe VCF File Annotation Guide](https://docs.genebe.net/docs/tutorials/vcf-file-annotation).
+
+## Docker
+This is experimental:
+
+```bash
+# Run with arguments
+docker run --rm ghcr.io/pstawinski/genebe-cli:latest [your-cli-args]
+
+# Run interactively
+docker run -it --rm ghcr.io/pstawinski/genebe-cli:latest
+
+# Mount current directory if your CLI works with files
+docker run --rm -v $(pwd):/workspace -w /workspace ghcr.io/pstawinski/genebe-cli:latest [args]
+```
+
+
 
 ## About
-**genebe-cli** is free to use for research purposes. Please note that the tool is currently in alpha, so feedback and issue reports are encouraged to help improve its functionality. If you encounter any issues or have suggestions, please raise them in the GitHub Issues section.
+**genebe-cli** is free to use for research purposes. It is also Research Use Only. Please note that the tool is currently in alpha, so feedback and issue reports are encouraged to help improve its functionality. If you encounter any issues or have suggestions, please raise them in the GitHub Issues section.
 
 Developed with love in Poland 💙
