@@ -15,23 +15,10 @@ Comprehensive documentation and usage examples can be found at [GeneBe VCF File 
 
 ## Docker
 This is experimental:
-
-```bash
-# Run with arguments
-docker run --rm ghcr.io/pstawinski/genebe-cli:latest [your-cli-args]
-
-# Run interactively
-docker run -it --rm ghcr.io/pstawinski/genebe-cli:latest
-
-# Mount current directory
-docker run --rm -v $(pwd):/workspace -w /workspace ghcr.io/pstawinski/genebe-cli:latest [args]
-```
-
 If you use docker, it may be wise to create and mount the `$HOME`, to let genebe create the `~/.genebe` folder, or create it by hand and mount.
 
 ```bash
-docker run --rm -v ${HOME}:/home/appuser -v $(pwd):/workspace -w /workspace ghcr.io/pstawinski/genebe-cli:latest
-
+docker run --rm --user $(id -u):$(id -g) -v ${HOME}:/home/$(whoami) -v $(pwd):/workspace -w /workspace ghcr.io/pstawinski/genebe-cli:latest
 ```
 
 ## About
