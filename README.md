@@ -18,7 +18,7 @@ This is experimental:
 If you use docker, it may be wise to create and mount the `$HOME`, to let genebe create the `~/.genebe` folder, or create it by hand and mount.
 
 ```bash
-docker run --rm --user $(id -u):$(id -g) -v ${HOME}:/home/$(whoami) -v $(pwd):/workspace -w /workspace ghcr.io/pstawinski/genebe-cli:latest
+docker run -it --rm --user $(id -u):$(id -g) -v ${HOME}:/home/$(whoami) -v $(pwd):/workspace -w /workspace ghcr.io/pstawinski/genebe-cli:latest
 ```
 
 ## About
